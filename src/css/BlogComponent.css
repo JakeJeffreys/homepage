@@ -1,0 +1,23 @@
+h3 {
+  font-size: 30px;
+  padding-bottom: 10px
+}
+.Blogs {
+  text-align: left;
+  padding-top: 30%;
+  padding-left: 5%;
+}
+.BlogElement {
+  padding-bottom: 20px;
+}
+#date {
+  font-size: 15px;
+}
+#new {
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 5px;
+}
+#article {
+  font-size: 20px;
+}

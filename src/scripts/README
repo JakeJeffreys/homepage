@@ -1,0 +1,16 @@
+## Commands
+
+# Run BlogReport
+python3
+
+# Run backgroundUpdate
+python
+
+
+# TODO
+
+- Top 5 world news from reddit
+- Event steam (url passes in city)
+
+- Calendar Events
+- Finances

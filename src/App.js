@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Moment from 'react-moment';
+// import Weather from 'react-weather-component';
+import './css/App.css';
+import BlogComponent from './BlogComponent';
+
+
 
 class App extends Component {
   render() {
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="App" id="mainApp">
+        <header className="App-header"></header>
+
+        <div id="left">
+          <BlogComponent/>
+        </div>
+
+        <div id="center">
+          <div className="Time" id="time">
+            <Moment interval={60000} format="h:mm A"></Moment>
+          </div>
+          <div className="Date" id="date">
+            <Moment format="dddd, MMMM Do"></Moment>
+          </div>
+        </div>
+
+        <div id="right">
+        </div>
+
       </div>
+
     );
   }
 }

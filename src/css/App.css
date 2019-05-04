@@ -1,0 +1,71 @@
+html {
+  height: 100%;
+}
+body {
+  height:100%;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div {
+  float: left;
+  width: 100%;
+  color: white;
+}
+#root {
+  height: 100%;
+}
+#left {
+    width:25%;
+    height: 100%;
+}
+#center {
+    padding-top: 20%;
+    width: 50%;
+}
+#right {
+    width: 25%;
+    height: 100%;
+}
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Time {
+  font-size: 80px;
+  margin: 5px;
+  text-shadow: 0 0 5px black;
+}
+
+.Date {
+  font-size: 30px;
+  text-shadow: 0 0 3px black;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
