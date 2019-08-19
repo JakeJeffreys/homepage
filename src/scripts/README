@@ -9,8 +9,7 @@ python
 
 # TODO
 
-- Top 5 world news from reddit
-- Event steam (url passes in city)
-
-- Calendar Events
-- Finances
+- Ad banner
+- Host on github
+- HackerNews
+- Event stream (url passes in city)
