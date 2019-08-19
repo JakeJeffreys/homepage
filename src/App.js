@@ -3,7 +3,7 @@ import Moment from 'react-moment';
 // import Weather from 'react-weather-component';
 import './css/App.css';
 import BlogComponent from './BlogComponent';
-
+import RedditComponent from './RedditComponent';
 
 
 class App extends Component {
@@ -27,6 +27,7 @@ class App extends Component {
         </div>
 
         <div id="right">
+          <RedditComponent/>
         </div>
 
       </div>
