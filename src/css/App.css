@@ -1,22 +1,27 @@
 html {
   height: 100%;
+  width: 100%;
 }
 body {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/background.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../images/background.jpg');
   /* background-image: url("../images/background.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 div {
   color: white;
   float: left;
+  width:100%;
+  font-size: 15px;
 }
 h3 {
   font-size: 30px;
   padding-bottom: 10px;
 }
 #root {
-  height: 100%;
+  width: 98%;
+
 }
 #left {
     width:25%;
@@ -24,6 +29,7 @@ h3 {
 }
 #center {
     width: 50%;
+    padding-top: 10%;
 }
 #right {
     width: 25%;
@@ -41,7 +47,7 @@ h3 {
 
 .App-header {
   width: 100%;
-  height: 20px;
+  height: 200px;
 }
 
 .App-link {
@@ -68,4 +74,26 @@ h3 {
   to {
     transform: rotate(360deg);
   }
+}
+a {
+  text-decoration: none;
+}
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: grey;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
 }
