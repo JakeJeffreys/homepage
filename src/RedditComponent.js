@@ -7,7 +7,6 @@ class RedditComponent extends Component {
     super();
     this.state = {
       articles: [],
-      url: [],
     }
   }
 
@@ -16,10 +15,9 @@ class RedditComponent extends Component {
     fetch('https://www.reddit.com/r/WorldNews/top/.json?count=5')
     .then(results => {
       return results.json();
-    }).then(data => {
-      console.log("data", data.data.children);
+    })
+    .then(data => {
       let articles = data.data.children.map((item) => {
-        console.log("item", item.data.title);
         return(
           <div key={item.data.children}>
             <a href={item.data.url}>
@@ -31,7 +29,6 @@ class RedditComponent extends Component {
         )
       })
       this.setState({articles: articles});
-      console.log("state", this.state.articles);
     })
   }
 
@@ -40,7 +37,7 @@ class RedditComponent extends Component {
     return(
       <div className="Reddit">
         <h3>
-          Today's Reddit News
+          Reddit World News
         </h3>
 
         <div className="RedditElement">

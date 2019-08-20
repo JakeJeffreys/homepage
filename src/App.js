@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import Moment from 'react-moment';
 // import Weather from 'react-weather-component';
 import './css/App.css';
-import BlogComponent from './BlogComponent';
+import TechBlogComponent from './TechBlogComponent';
 import RedditComponent from './RedditComponent';
+import HackerNewsComponent from './HackerNewsComponent';
 
 
 class App extends Component {
@@ -11,10 +12,9 @@ class App extends Component {
 
     return (
       <div className="App" id="mainApp">
-        <header className="App-header"></header>
 
         <div id="left">
-          <BlogComponent/>
+          <TechBlogComponent/>
         </div>
 
         <div id="center">
@@ -27,6 +27,7 @@ class App extends Component {
         </div>
 
         <div id="right">
+          <HackerNewsComponent/>
           <RedditComponent/>
         </div>
 

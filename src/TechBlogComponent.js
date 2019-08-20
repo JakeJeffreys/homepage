@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import blogData from './scripts/data.json';
-import './css/BlogComponent.css';
+import './css/TechBlogComponent.css';
 
 
-class BlogComponent extends Component {
+class TechBlogComponent extends Component {
 
   render() {
 
@@ -33,13 +33,13 @@ class BlogComponent extends Component {
     }
 
     return(
-      <div className="Blogs">
+      <div className="TechBlogs">
 
         <h3>
-          Blog Scraper
+          Tech Blogs
         </h3>
 
-        <div className="BlogElement">
+        <div className="TechBlogElement">
           <div id="Website">
             Coding Horror
           </div>
@@ -54,7 +54,7 @@ class BlogComponent extends Component {
           </div>
         </div>
 
-        <div className="BlogElement">
+        <div className="TechBlogElement">
           <div id="Website">
             Joel On Software
           </div>
@@ -69,7 +69,7 @@ class BlogComponent extends Component {
           </div>
         </div>
 
-        <div className="BlogElement">
+        <div className="TechBlogElement">
           <div id="Website">
             A List Apart
           </div>
@@ -89,4 +89,4 @@ class BlogComponent extends Component {
   }
 }
 
-export default BlogComponent;
+export default TechBlogComponent;
