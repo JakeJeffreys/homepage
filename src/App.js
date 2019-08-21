@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Moment from 'react-moment';
 import './css/App.css';
+import FinanceBlogComponent from './FinanceBlogComponent';
 import TechBlogComponent from './TechBlogComponent';
 import RedditComponent from './RedditComponent';
 import HackerNewsComponent from './HackerNewsComponent';
@@ -13,7 +14,8 @@ class App extends Component {
       <div className="App" id="mainApp">
 
         <div id="left">
-          <TechBlogComponent/>
+          <FinanceBlogComponent/>
+          <RedditComponent/>
         </div>
 
         <div id="center">
@@ -26,8 +28,8 @@ class App extends Component {
         </div>
 
         <div id="right">
+          <TechBlogComponent/>
           <HackerNewsComponent/>
-          <RedditComponent/>
         </div>
 
       </div>

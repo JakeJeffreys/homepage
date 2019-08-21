@@ -9,6 +9,8 @@ python
 
 # TODO
 
+- Incorporate chron job
 - Ad banner
-- Host on github
+- Finance blogs
+- Tab icon and name
 - Event stream (url passes in city)

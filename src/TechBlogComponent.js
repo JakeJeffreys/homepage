@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import blogData from './scripts/data.json';
+import blogData from './scripts/techblogs.json';
 import './css/TechBlogComponent.css';
 
 
