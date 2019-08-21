@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Moment from 'react-moment';
-// import Weather from 'react-weather-component';
 import './css/App.css';
 import TechBlogComponent from './TechBlogComponent';
 import RedditComponent from './RedditComponent';
