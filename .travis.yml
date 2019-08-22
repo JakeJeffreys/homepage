@@ -1,12 +1,17 @@
 language: node_js
 node_js:
   - "stable"
+cache:
+  directories:
+  - node_modules
 script:
   - echo "skipping tests"
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $github_token  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: gh-pages
+  - npm run build
+
+# deploy:
+#   provider: pages
+#   skip_cleanup: true
+#   github_token: $github_token  # Set in the settings page of your repository, as a secure variable
+#   keep_history: true
+#   on:
+#     branch: master
