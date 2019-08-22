@@ -5,6 +5,7 @@ cache:
   directories:
   - node_modules
 script:
+  - python3 src/scripts/BlogReport.py
   - echo "skipping tests"
   - npm run build
 
