@@ -6,7 +6,7 @@ cache:
   - node_modules
 
 install:
-  - pip install --user BeautifulSoup4
+  - sudo pip install BeautifulSoup4
 script:
   - python3 src/scripts/BlogReport.py
   - echo "skipping tests"
