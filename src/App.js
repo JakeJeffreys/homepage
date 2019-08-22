@@ -21,6 +21,7 @@ class App extends Component {
         <div id="center">
           <div className="Time" id="time">
             <Moment interval={60000} format="h:mm A"></Moment>
+            asdf
           </div>
           <div className="Date" id="date">
             <Moment format="dddd, MMMM Do"></Moment>
