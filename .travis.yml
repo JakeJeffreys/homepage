@@ -5,7 +5,7 @@ matrix:
       install:
         - sudo pip install BeautifulSoup4
       script:
-        - python3 src/scripts/BlogReport.py
+        - python src/scripts/BlogReport.py
 
     - language: node_js
       node_js:
