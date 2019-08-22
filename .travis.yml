@@ -4,8 +4,10 @@ node_js:
 cache:
   directories:
   - node_modules
+
+install:
+  - pip install --user BeautifulSoup4
 script:
-  - pip install BeautifulSoup4
   - python3 src/scripts/BlogReport.py
   - echo "skipping tests"
   - npm run build
