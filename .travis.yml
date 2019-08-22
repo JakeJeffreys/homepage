@@ -1,21 +1,25 @@
-language: node_js
-node_js:
-  - "stable"
-cache:
-  directories:
-  - node_modules
+matrix:
+  include:
+    - language: python
+      python: 2.7
+      install:
+        - sudo pip install BeautifulSoup4
+      script:
+        - python3 src/scripts/BlogReport.py
 
-install:
-  - sudo pip install BeautifulSoup4
-script:
-  - python3 src/scripts/BlogReport.py
-  - echo "skipping tests"
-  - npm run build
-
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $github_token  # Set in the settings page of your repository, as a secure variable
-  local_dir: build
-  on:
-    branch: master
+    - language: node_js
+      node_js:
+        - "stable"
+      cache:
+        directories:
+        - node_modules
+      script:
+        - echo "skipping tests"
+        - npm run build
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $github_token  # Set in the settings page of your repository, as a secure variable
+        local_dir: build
+        on:
+          branch: master
