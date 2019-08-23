@@ -12,6 +12,7 @@ matrix:
         - python FinanceReport.py
       after_success:
         - cd ../../
+        - git config --global github.token $github_token
         - ./push.sh
       env:
         global:
