@@ -12,7 +12,7 @@ matrix:
         - python FinanceReport.py
       after_success:
         - cd ../../
-        - push.sh
+        - ./push.sh
 
     - language: node_js
       node_js:
