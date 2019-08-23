@@ -10,6 +10,9 @@ matrix:
         - python backgroundUpdate.py
         - python BlogReport.py
         - python FinanceReport.py
+      after_success:
+        - cd ../../
+        - .travis/push.sh
 
     - language: node_js
       node_js:
