@@ -4,10 +4,12 @@ matrix:
       python: 2.7
       install:
         - pip install -r requirements.txt
+      before_script:
+        - cd src/scripts
       script:
-        - python src/scripts/backgroundUpdate.py
-        - python src/scripts/BlogReport.py
-        - python src/scripts/FinanceReport.py
+        - python backgroundUpdate.py
+        - python BlogReport.py
+        - python FinanceReport.py
 
     - language: node_js
       node_js:
