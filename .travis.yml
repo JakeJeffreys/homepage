@@ -3,7 +3,7 @@ matrix:
     - language: python
       python: 2.7
       install:
-        - sudo pip install BeautifulSoup4
+        - sudo pip install requirements.txt
       script:
         - python src/scripts/BlogReport.py
 
