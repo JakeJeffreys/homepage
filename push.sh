@@ -3,6 +3,7 @@
 setup_git() {
   git config --global user.email "njjeffreys@gmail.com"
   git config --global user.name "JakeJeffreys"
+  git config --global user.password $github_token
 }
 
 push_new_files() {
