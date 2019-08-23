@@ -1,24 +1,32 @@
 #!/bin/sh
 
 setup_git() {
-  git config --global user.email "njjeffreys@gmail.com"
-  git config --global user.name "JakeJeffreys"
-  git config --global user.password $github_token
+  git config --global user.email "travis@travis-ci.org"
+  git config --global user.name "Travis CI"
 }
 
-push_new_files() {
+commit_country_json_files() {
   git checkout master
   git add *
-  git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
-  git push
+  git commit -m "Travis update: $TRAVIS_BUILD_NUMBER"
 }
 
-# upload_files() {
-#   # git remote add origin-pages https://${github_token}@github.com/MVSE-outreach/resources.git > /dev/null 2>&1
-#   # git push --quiet --set-upstream origin-pages gh-pages
-#   git push
-# }
+upload_files() {
+  # Remove existing "origin"
+  git remote rm origin
+  # Add new "origin" with access token in the git URL for authentication
+  git remote add origin https://jakejeffreys:${GH_TOKEN}@github.com/jakejeffreys/homepage.git > /dev/null 2>&1
+  git push origin master --quiet
+}
 
 setup_git
-push_new_files
-# upload_files
+
+commit_country_json_files
+
+# Attempt to push to git only if "git commit" succeeded
+if [ $? -eq 0 ]; then
+  echo "A new commit with changed country JSON files exists. Uploading to GitHub"
+  upload_files
+else
+  echo "No changes in country JSON files. Nothing to do"
+fi
