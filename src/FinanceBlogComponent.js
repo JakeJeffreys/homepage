@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import blogData from './scripts/financeblogs.json';
+import blogData from './scripts/json/financeblogs.json';
 import './css/FinanceBlogComponent.css';
 
 

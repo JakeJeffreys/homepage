@@ -104,5 +104,5 @@ blogData['My Money Blog'].append({
 
 print (blogData)
 
-with open('financeblogs.json', 'w') as outfile:
+with open('json/financeblogs.json', 'w') as outfile:
     json.dump(blogData, outfile)

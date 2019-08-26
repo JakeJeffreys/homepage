@@ -42,3 +42,18 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Commands
+
+# Run python Scripts
+python <name>.py
+
+# TODO
+
+- add header links to sites
+- Ad banner
+- Finance blogs
+- Tab icon and name
+- Event stream (url passes in city)
+- Weather top right corner?
+- Change time of travis-ci job

@@ -104,5 +104,5 @@ blogData['A List Apart'].append({
 
 print (blogData)
 
-with open('techblogs.json', 'w') as outfile:
+with open('json/techblogs.json', 'w') as outfile:
     json.dump(blogData, outfile)
