@@ -9,7 +9,7 @@ matrix:
         - cd src/scripts
       script:
         - python backgroundUpdate.py
-        - python BlogReport.py
+        - python TechReport.py
         - python FinanceReport.py
       after_success:
         - cd ../../
