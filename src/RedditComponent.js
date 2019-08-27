@@ -37,7 +37,9 @@ class RedditComponent extends Component {
     return(
       <div className="Reddit">
         <h3>
-          Reddit World News
+          <a href="https://www.reddit.com/r/worldnews/">
+            Reddit World News
+          </a>
         </h3>
 
         <div className="RedditElement">

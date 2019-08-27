@@ -48,7 +48,9 @@ class HackerNewsComponent extends Component {
     return(
       <div className="HackerNews">
         <h3>
-          Hacker News
+          <a href="https://news.ycombinator.com/">
+            Hacker News
+          </a>
         </h3>
 
         <div className="HackerNewsElement">

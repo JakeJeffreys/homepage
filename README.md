@@ -52,8 +52,6 @@ python <name>.py
 
 - add header links to sites
 - Ad banner
-- Finance blogs
-- Tab icon and name
 - Event stream (url passes in city)
 - Weather top right corner?
 - Change time of travis-ci job

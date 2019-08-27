@@ -44,8 +44,8 @@ class TechBlogComponent extends Component {
             Coding Horror
           </div>
           <div id="date">
+            <NewOrOld newFlag={new_CH}/> &nbsp;
             {date_CH}
-            <NewOrOld newFlag={new_CH}/>
           </div>
           <div id="article">
             <a href={url_CH}>
@@ -59,8 +59,8 @@ class TechBlogComponent extends Component {
             Joel On Software
           </div>
           <div id="date">
+            <NewOrOld newFlag={new_JOS}/> &nbsp;
             {date_JOS}
-            <NewOrOld newFlag={new_JOS}/>
           </div>
           <div id="article">
             <a href={url_JOS}>
@@ -74,8 +74,8 @@ class TechBlogComponent extends Component {
             A List Apart
           </div>
           <div id="date">
+            <NewOrOld newFlag={new_ALA}/> &nbsp;
             {date_ALA}
-            <NewOrOld newFlag={new_ALA}/>
           </div>
           <div id="article">
             <a href={url_ALA}>
