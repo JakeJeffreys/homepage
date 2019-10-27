@@ -21,8 +21,6 @@ class RedditComponent extends Component {
         return(
           <div key={item.data.children}>
             <a href={item.data.url}>
-              [{item.data.score}]
-              -&nbsp;
               {item.data.title}
             </a>
           </div>

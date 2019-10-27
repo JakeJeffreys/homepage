@@ -18,8 +18,6 @@ class HackerNewsComponent extends Component {
       return(
         <div key={article.id}>
           <a href={article.url}>
-            [{article.score}]
-            -&nbsp;
             {article.title}
           </a>
         </div>
