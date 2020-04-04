@@ -6,21 +6,22 @@ import TechBlogComponent from './TechBlogComponent';
 import RedditComponent from './RedditComponent';
 import HackerNewsComponent from './HackerNewsComponent';
 import $ from "jquery";
+import images from './images';
+import moment from 'moment';
 
 class App extends Component {
 
   componentDidMount() {
-    console.log("Background");
-    // $("body").css("background", "url(./src/background0.jpg)");
+    let date = moment(new Date());
+    let day = date.date();
+    $("body").css("background", "linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.8) ), url(" + images[day-1].src + ")");
+    $("body").css("background-size", "cover");
+    $("body").css("background-position", "50% 0");
   }
 
   render() {
 
     return (
-      <body style={{
-        height: '200px',
-        background: 'url(/src/background0.jpg)'
-      }}>
       <div className="App" id="mainApp">
 
         <div id="left">
@@ -43,8 +44,6 @@ class App extends Component {
         </div>
 
       </div>
-      </body>
-
     );
   }
 }
