@@ -35,14 +35,11 @@ class HackerNewsComponent extends Component {
       for(var j=0; j < 5 ; j++) {
         articles.push(await this.makeRequest(data[j]));
       }
-      console.log('setting state')
       this.setState({articles});
     })
-    //code here immediately starts riunning
   }
 
   render() {
-    console.log(this.state.articles);
     return(
       <div className="HackerNews">
         <h3>
