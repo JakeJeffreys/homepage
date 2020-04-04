@@ -5,12 +5,22 @@ import FinanceBlogComponent from './FinanceBlogComponent';
 import TechBlogComponent from './TechBlogComponent';
 import RedditComponent from './RedditComponent';
 import HackerNewsComponent from './HackerNewsComponent';
-
+import $ from "jquery";
 
 class App extends Component {
+
+  componentDidMount() {
+    console.log("Background");
+    // $("body").css("background", "url(./src/background0.jpg)");
+  }
+
   render() {
 
     return (
+      <body style={{
+        height: '200px',
+        background: 'url(/src/background0.jpg)'
+      }}>
       <div className="App" id="mainApp">
 
         <div id="left">
@@ -33,6 +43,7 @@ class App extends Component {
         </div>
 
       </div>
+      </body>
 
     );
   }
